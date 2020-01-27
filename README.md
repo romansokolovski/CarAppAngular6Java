@@ -12,3 +12,11 @@ To run Application:
 2. mvn clean package in parent folder(3. cd.. or cd CarAppAngular6Java and 4. mvn clean package)
 3. mvn spring-boot:run in server folder(5.cd /server, 6. mvn spring-boot:run)
 4. go to http://localhost:8080/
+
+
+
+
+
+## Docker image
+1. docker pull romansokolovski/testing:1.0-SNAPSHOT
+2. docker run -d -p 8080:8080 romansokolovski/testing:1.0-SNAPSHOT
