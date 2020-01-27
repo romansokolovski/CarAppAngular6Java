@@ -1,0 +1,17 @@
+<h1>Car Listings Page</h1>
+
+<div class="leftalign" style="display:flex;width:inherit;margin-left:40px;margin-right:40px;margin-bottom:20px;margin-top:20px;">
+  <input class="form-control" type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="&#128269;  Type to get filtered search results">
+</div>
+
+<div class="leftalign" style="display:flex;flex-flow:wrap;background-color:lightgrey; margin-left:50px;margin-right:50px;border-radius:10px;">
+  <div class="card" style="width: 18rem;" *ngFor="let car of cars | filter:searchText">
+    <div class="card-body">
+      <h5 class="card-title">{{car.make}}</h5>
+      <p class="card-text">{{car.model}}</p>
+      <p class="card-text">{{car.year}}</p>
+
+      <a (click)=goToDetailsPage(car.id) class="btn btn-primary" style="background-color:white;">Car Details</a>
+    </div>
+  </div>
+</div>

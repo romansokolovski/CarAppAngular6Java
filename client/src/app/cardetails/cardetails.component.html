@@ -1,0 +1,23 @@
+<h1>Car Details Page</h1>
+
+<div class="card" *ngIf="carDetails" style="margin-right:40px;margin-left:40px;">
+  <div class="card-header" style="margin-bottom:20px;">
+    {{carDetails.make}} Details
+  </div>
+  <div class="card-body" style="text-align:-webkit-center;background-color:lightgrey;margin-left:50px;margin-right:50px;border-radius:20px;">
+    <h5 class="card-title">{{carDetails.make}} {{carDetails.model}}</h5>
+    <div style="width:600px;border-bottom:solid;border-bottom-width:thin;display:flex; justify-content:center;">
+      <img [src]="carDetails.picture" style="border:outset;border-radius:20px;width:inherit;margin-bottom:10px;width:300px">
+      <img [src]="carDetails.interiorPicture" style="border:outset;border-radius:20px;width:inherit;margin-bottom:10px;width:300px">
+    </div>
+    <div style="display:flex; text-align:left;width:600px">
+    <p class="card-text" style="padding-right:10px;">Make : {{carDetails.make}}</p>
+    <p class="card-text" style="padding-right:10px;">Model : {{carDetails.model}}</p>
+    <p class="card-text" style="padding-right:10px;">Year : {{carDetails.year}}</p>
+    <p class="card-text" style="padding-right:10px;">Kilometers : {{carDetails.kilometers}}</p>
+    <p class="card-text">Price : {{carDetails.price}}</p>
+    </div>
+    <p class="card-text">Description : {{carDetails.description}}</p>
+    <a (click)=goToCarPage() class="btn btn-primary" style="background-color:white;">Back to All Car Listings</a>
+  </div>
+</div>
