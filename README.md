@@ -2,7 +2,7 @@
 
 Current Environment has AngularCLI 6.2.3, node 10.16.3, npm 6.12.1, mvn 3.6.1, spring-boot 2.0.3.release
 
-Node/Npm installed when running mvn clean package: 
+Node/Npm installed locally when running mvn clean package: 
 1. nodeVersion: v8.9.0
 2. npmVersion: 5.5.1
 
