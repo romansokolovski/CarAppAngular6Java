@@ -20,3 +20,4 @@ To run Application:
 ## Docker image
 1. docker pull romansokolovski/testing:1.0-SNAPSHOT
 2. docker run -d -p 8080:8080 romansokolovski/testing:1.0-SNAPSHOT
+3. go to http://localhost:8080/
